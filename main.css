@@ -1,0 +1,157 @@
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+ --bgc:#00040F;
+ --main-color:#fff;
+ --btn:url(./images/icons8-sun-48.png);
+}
+.dark{
+  --bgc:#fff;
+  --main-color:#00040F;
+  --btn:url(./images/icons8-moon-30.png);
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Epilogue;
+  margin: 0;
+  background-color: #00040F;
+}
+.container{
+  width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+ul,ol{
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+}
+/* header start  */
+
+.header__item--link{
+  color: #FFFFFF;
+  margin-right: 56px;
+}
+.header__item--li:nth-child(4){
+  margin-right: 0;
+}
+.hero__wrapper{
+  align-items: center;
+}
+.header__wrapper{
+  display: flex;  
+}
+.header__list{
+  display: flex;
+  margin-left: auto;
+  margin-top: 2px;
+}
+.header{
+  padding-top: 30px;
+}
+.header__btn{
+  width: 50px;
+  height: 50px;
+  border: none;
+  display: block;
+  content: "";
+  width:20px ;
+  height: 20px;
+  background-image: var(--btn);
+  background-size: 20px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+/* hero start  */
+.hero__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.hero__before{
+  color: #fff;
+  font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+padding: 6px 10px 7px 55px;
+}
+.hero__title{
+  font-family: Poppins;
+font-weight: 600;
+font-size: 72px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #fff;
+margin-bottom: 40px;
+}
+.hero__title--span{
+  color: #33BBCF;
+}
+.hero__txt--wrapper{
+  height: 93px;
+  width: 483px;
+}
+.hero__txt{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 170%;
+letter-spacing: 0%;
+color: #FFFFFFB2;
+}
+.hero__title--wrapper{
+  width: 670px;
+}
+.hero__before::before{
+  display: block;
+  content: "";
+  width:20px ;
+  height: 20px;
+  background-image: url("./images/Discount.svg");
+  background-size: 20px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.hero__before{
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #000;
+}
