@@ -308,6 +308,10 @@ letter-spacing: 0%;
   padding-left: 10px;
   background-repeat: no-repeat;
 }
+.business__top-middle-bottom:hover{
+  border-radius: 20px;
+  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);
+}
 .business__top::before{
   display: block;
   content: "";
@@ -323,8 +327,11 @@ letter-spacing: 0%;
   padding-left: 20px;
   padding-bottom: 16px;
 }
+.business__top-middle-bottom:hover .business__right--txts{
+  color: #fff;
+}
 .business__middle--title, .business__middle--txt{
-  color: #FFFFFF;
+  color: var(--main-color);
 }
 /* .business finish  */
 /* control start  */
@@ -402,10 +409,12 @@ margin-bottom: 36px;
 .people__wrapper{
   display: flex;
   flex-wrap: wrap;
+  width: 1170px;
 }
 .people__top{
   display: flex;
   margin-bottom: 80px;
+  justify-content: space-between;
 }
 .people__list{
   display: flex;
@@ -441,10 +450,13 @@ font-size: 18px;
 line-height: 180%;
 letter-spacing: 2%;
 color: var(--main-color);
+margin-top: 40px;
+margin-bottom: 24px;
 }
 .people__item{
   width: 370px;
   height: 395px;
+  padding: 40px;
 }
 .people__account{
   font-family: Poppins;
@@ -453,5 +465,113 @@ font-size: 20px;
 line-height: 32px;
 letter-spacing: 0%;
 color: var(--main-color);
-margin-top: auto;
+}
+.people__contact::before{
+  display: block;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: 48px;
+  background-image: url(./images/awoman.png);
+  padding-left: 10px;
+  background-repeat: no-repeat; 
+  background-position: 10px ;
+}
+.people__item:nth-child(2) .people__contact::before{
+  background-image: url(./images/amanwithglasses.png);
+}
+.people__item:nth-child(2) .people__contact{
+  margin-top: 61px;
+}
+.people__item:nth-child(3) .people__contact::before{
+  background-image: url(./images/blackwhiteman.png);
+}
+.people__contact{
+  display: flex;
+  align-items: center;
+}
+.people__item{
+  border-radius: 20px;
+}
+.people__item:hover{
+  background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+}
+.people__item:hover  .people__account--txt{
+  color: #FFFFFF;
+}
+.people__item:hover .people__account{
+  color: #FFFFFF;
+}
+.people__item:hover  .people__item--txt{
+  color: #FFFFFF;
+}
+
+.people__account--txt{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: var(--herotxt-color);
+}
+.people__contact--wrapper{
+  width: 158px;
+  height: 56px;
+}
+.people{
+  padding-bottom: 100px;
+}
+/* .people finish  */
+/* adds START  */
+.add__wrapper{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.add__img{
+  width: 192px;
+}
+.add{
+  padding-bottom: 100px;
+}
+/* add finish  */
+/* start service  */
+.service__wrapper{
+  width: 1170px;
+  border-radius: 20px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+
+}
+.service__title{
+  font-family: Poppins;
+font-weight: 600;
+font-size: 48px;
+line-height: 140%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+.service__txt{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+letter-spacing: 1%;
+color: #FFFFFFB2;
+}
+.service__txts--wrapper{
+  margin-left: 97px;
+  width: 670px;
+}
+.service__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.last-link{
+  margin-right: 133px;
+}
+.service{
+  margin-bottom: 82px;
 }
