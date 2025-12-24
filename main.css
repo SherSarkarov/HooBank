@@ -1,4 +1,12 @@
 
+/* abel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/abel-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -44,6 +52,7 @@
 body{
   margin: 0;
   background-color: var(--bgc);
+  color: #fff;
 }
 .container{
   width: 1210px;
@@ -574,4 +583,111 @@ color: #FFFFFFB2;
 }
 .service{
   margin-bottom: 82px;
+}
+/* service finish  */
+/* footer start  */
+footer{
+  padding-top: 72px;
+  background: #0B0A0C99;
+  padding-bottom: 50px;
+}
+.footer__logo{
+  width: 266px;
+  height: 73px;
+}
+.footer__list{
+  display: flex;
+}
+.footer__wrapper{
+  display: flex;
+}
+.footer__txt--wrapper{
+  width: 312px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.footer__item{
+  margin-left: 155px;
+}
+.footer__item:nth-child(1){
+  width: 136px;
+}
+.footer__item:nth-child(2){
+  width: 109px;
+}
+.footer__item:nth-child(3){
+  width: 146px;
+}
+.footer__txt{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0%;
+color: #FFFFFFB2; 
+}
+.footer__titles{
+  font-family: Poppins;
+font-weight: 500;
+font-size: 18px;
+line-height: 180%;
+letter-spacing: 1%;
+text-align: center;
+}
+.footer__subtxt{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #FFFFFFB2;
+}
+.footerbottom__list{
+  display: flex;
+}
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.footerbottom__item{
+  /* gap: 33px; */
+  margin-top: 33px;
+  margin-right: 20px;
+}
+.footerbottom__item:nth-child(4){
+  margin-right: 0;
+}
+.footerbottom__txt{
+  font-family: Abel;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+color: #FFFFFF99;
+display: flex;
+align-items: center;
+}
+.footer__hr{
+  color: #0B0A0C99;
+}
+.footerbottom__txt--strong{
+  font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+display: flex;
+align-items: center;
+}
+.footerbottom__txt--strong::before{
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(./images/copyrightlogo.png);
+  background-size: cover;
+  margin-right: 5px;
+  margin-left: 5px;
 }
